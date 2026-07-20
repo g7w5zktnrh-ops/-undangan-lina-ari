@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Undangan Lina & Ari</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#eef3ec;color:#2f4f3a;text-align:center}
+.hero{padding:60px 20px}
+.card{background:#fff;max-width:700px;margin:20px auto;padding:24px;border-radius:18px;box-shadow:0 4px 16px rgba(0,0,0,.12)}
+button{background:#7c9a7a;color:#fff;border:none;padding:14px 28px;border-radius:30px;font-size:16px;cursor:pointer}
+#content{display:none}
+video{width:100%;border-radius:12px}
+</style>
+<script>
+function buka(){
+ document.getElementById('cover').style.display='none';
+ document.getElementById('content').style.display='block';
+ const v=document.getElementById('vid');
+ if(v){v.play().catch(()=>{});}
+}
+</script>
+</head>
+<body>
+<div id="cover" class="hero">
+<h3>Undangan Pernikahan</h3>
+<h1>Lina Sari Situmeang, S.E.<br>&<br>Muhammad Bukhari Hutabarat</h1>
+<p>Minggu, 09 Agustus 2026</p>
+<button onclick="buka()">Buka Undangan</button>
+</div>
+
+<div id="content">
+<div class="card">
+<h2>Assalamu'alaikum Wr. Wb.</h2>
+<p>Dengan memohon rahmat dan ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri pernikahan kami.</p>
+<h2>Lina Sari Situmeang, S.E.</h2>
+<h3>&</h3>
+<h2>Muhammad Bukhari Hutabarat</h2>
+<p><b>Akad Nikah</b><br>08.00 WIB</p>
+<p><b>Resepsi</b><br>11.00 WIB s/d selesai</p>
+<p><b>Alamat</b><br>Jl. Alfaka VII No. 23-B, Tj. Mulia Hilir</p>
+<h3>Video Undangan</h3>
+<video id="vid" controls>
+<source src="Lina & Ari.mp4" type="video/mp4">
+</video>
+<p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.</p>
+</div>
+</div>
+</body></html>
